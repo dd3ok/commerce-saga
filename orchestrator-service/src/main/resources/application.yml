@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: orchestrator-service
+  datasource:
+    url: jdbc:postgresql://localhost:5435/orchestratordb
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+kafka:
+  bootstrap-servers: localhost:29092
+
+outbox:
+  table-name: outbox_event
